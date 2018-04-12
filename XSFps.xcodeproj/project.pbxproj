@@ -10,6 +10,9 @@
 		8B7EDA6E207F248F009D3717 /* XSFps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7EDA64207F248F009D3717 /* XSFps.framework */; };
 		8B7EDA73207F248F009D3717 /* XSFpsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EDA72207F248F009D3717 /* XSFpsTests.swift */; };
 		8B7EDA75207F248F009D3717 /* XSFps.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7EDA67207F248F009D3717 /* XSFps.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B7EDA7F207F24B5009D3717 /* XSFps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EDA7E207F24B5009D3717 /* XSFps.swift */; };
+		8B7EDA81207F24E3009D3717 /* CADisplayLink+XSAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EDA80207F24E3009D3717 /* CADisplayLink+XSAdd.swift */; };
+		8B7EDA82207F24E3009D3717 /* CADisplayLink+XSAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EDA80207F24E3009D3717 /* CADisplayLink+XSAdd.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,8 @@
 		8B7EDA6D207F248F009D3717 /* XSFpsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XSFpsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7EDA72207F248F009D3717 /* XSFpsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSFpsTests.swift; sourceTree = "<group>"; };
 		8B7EDA74207F248F009D3717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B7EDA7E207F24B5009D3717 /* XSFps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XSFps.swift; sourceTree = "<group>"; };
+		8B7EDA80207F24E3009D3717 /* CADisplayLink+XSAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CADisplayLink+XSAdd.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,8 @@
 			children = (
 				8B7EDA67207F248F009D3717 /* XSFps.h */,
 				8B7EDA68207F248F009D3717 /* Info.plist */,
+				8B7EDA7E207F24B5009D3717 /* XSFps.swift */,
+				8B7EDA80207F24E3009D3717 /* CADisplayLink+XSAdd.swift */,
 			);
 			path = XSFps;
 			sourceTree = "<group>";
@@ -148,6 +155,7 @@
 				TargetAttributes = {
 					8B7EDA63207F248F009D3717 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					8B7EDA6C207F248F009D3717 = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B7EDA7F207F24B5009D3717 /* XSFps.swift in Sources */,
+				8B7EDA81207F24E3009D3717 /* CADisplayLink+XSAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7EDA73207F248F009D3717 /* XSFpsTests.swift in Sources */,
+				8B7EDA82207F24E3009D3717 /* CADisplayLink+XSAdd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +350,7 @@
 		8B7EDA79207F248F009D3717 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,6 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = le.XSFps;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +376,7 @@
 		8B7EDA7A207F248F009D3717 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -387,6 +401,7 @@
 		8B7EDA7C207F248F009D3717 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XSFpsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +419,7 @@
 		8B7EDA7D207F248F009D3717 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XSFpsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
