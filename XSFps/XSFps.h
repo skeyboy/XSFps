@@ -15,5 +15,5 @@ FOUNDATION_EXPORT double XSFpsVersionNumber;
 FOUNDATION_EXPORT const unsigned char XSFpsVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <XSFps/PublicHeader.h>
-
+#import <XSFps/XSFps.h>
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53054B5821C7D05D002AD871 /* XSFps.swift in Headers */ = {isa = PBXBuildFile; fileRef = 8B7EDA7E207F24B5009D3717 /* XSFps.swift */; };
 		8B7EDA6E207F248F009D3717 /* XSFps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7EDA64207F248F009D3717 /* XSFps.framework */; };
 		8B7EDA73207F248F009D3717 /* XSFpsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7EDA72207F248F009D3717 /* XSFpsTests.swift */; };
 		8B7EDA75207F248F009D3717 /* XSFps.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B7EDA67207F248F009D3717 /* XSFps.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -101,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B7EDA75207F248F009D3717 /* XSFps.h in Headers */,
+				53054B5821C7D05D002AD871 /* XSFps.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
