@@ -42,7 +42,14 @@ class XSFps: Label {
     }
     deinit {
         if (link != nil) {
+            #if swift(>=4.2)
+            link?.remove(from: RunLoop.main, forMode: RunLoop.Mode.common)
+            #else
+            
             link?.remove(from: RunLoop.main, forMode: RunLoopMode.commonModes)
+            #endif
+            
+            
         }
     }
     override init(frame: CGRect) {
@@ -54,8 +61,19 @@ class XSFps: Label {
         addPan()
         
         link = CADisplayLink(target: self, selector: #selector(start(aLink:)))
+        
+        #if swift(>=4.2)
+        
+link?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
+        
+        #else
         link?.add(to: RunLoop.main
             , forMode: RunLoopMode.commonModes)
+
+        link?.add(to: RunLoop.main
+            , forMode: RunLoopMode.commonModes)
+
+        #endif
         
     }
     private func addPan(){
@@ -96,8 +114,13 @@ class XSFps: Label {
         }
         addPan()
         link = CADisplayLink(target: self, selector: #selector(start(aLink:)))
+        #if swift(>=4.2)
+        link?.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
+        #else
         link?.add(to: RunLoop.main
-            , forMode: RunLoopMode.commonModes)
+        , forMode: RunLoopMode.commonModes)
+        #endif
+       
     }
     
 }
